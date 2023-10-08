@@ -48,6 +48,6 @@ fun Greeting(name: String,modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     TRIMESTRE1Theme {
-        Greeting("Daniel Rueda")
+        Greeting("Daniel Rueda de Lorenzo")
     }
 }
