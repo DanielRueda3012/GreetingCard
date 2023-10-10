@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background) {
-                    Saludo("Android")
+                    Saludo("Daniel Rueda de Lorenzo")
                 }
 
             }
@@ -38,7 +38,7 @@ fun Saludo(name: String, modifier: Modifier = Modifier) {
 
     Surface(color = Color(255,153,0) )  {
         Text(
-            text = "Hello mi nombre es $name!",modifier = Modifier.padding(19.dp)
+            text = "Hola mi nombre es $name!",modifier = Modifier.padding(19.dp)
 
         )
     }
@@ -46,8 +46,15 @@ fun Saludo(name: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun PantallaPreview1() {
     TRIMESTRE1Theme {
         Saludo("Daniel Rueda de Lorenzo")
+    }
+}
+@Preview(showBackground = true)
+@Composable
+fun PantallaPreview2() {
+    TRIMESTRE1Theme {
+        Saludo("Daniel Rueda ")
     }
 }
